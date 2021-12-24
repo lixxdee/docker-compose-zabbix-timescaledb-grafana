@@ -61,18 +61,12 @@ services:
     image: grafana/grafana
     networks:
       - network-zabbix
-    links:
-      - timescaledb
-      - zabbix-server
-      - zabbix-web
     restart: always
     ports:
       - '3000:3000'
     environment: 
       - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
     depends_on:
-      - timescaledb
-      - zabbix-server
       - zabbix-web
   zabbix-agent:
     container_name: zabbix-agent
