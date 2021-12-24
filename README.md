@@ -6,7 +6,7 @@
 
 <code>docker ps -a</code> - make sure all containers are is running.
 
-<code>docker inspect zabbix-agent | grep "IPAddress\\": "</code> - received ip address you need change in web interface zabbix instead of '127.0.0.1'.
+<code>docker inspect zabbix-agent | grep "IPAddress\\": "</code> - received ip address you need change in web interface Zabbix server instead of '127.0.0.1', or just insert <code>zabbix-agent</code> in DNS name.
 
 <code>docker restart zabbix-agent</code> - restart zabbix-agent container.
 
