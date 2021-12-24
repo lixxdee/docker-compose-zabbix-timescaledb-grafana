@@ -64,6 +64,7 @@ services:
     links:
       - timescaledb
       - zabbix-server
+      - zabbix-web
     restart: always
     ports:
       - '3000:3000'
@@ -72,6 +73,7 @@ services:
     depends_on:
       - timescaledb
       - zabbix-server
+      - zabbix-web
   zabbix-agent:
     container_name: zabbix-agent
     image: zabbix/zabbix-agent2:alpine-5.0.1
