@@ -13,10 +13,10 @@ services:
     ports:
       - '5432:5432'
     environment:
-	    POSTGRES_USER: zabbix
+      POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: zabbix
       POSTGRES_DB: zabbix
-	  TS_TUNE_MAX_CONNS: 500
+      TS_TUNE_MAX_CONNS: 500
   zabbix-server:
     image: zabbix/zabbix-server-pgsql:latest
     networks:
