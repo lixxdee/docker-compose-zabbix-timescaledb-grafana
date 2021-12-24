@@ -10,4 +10,6 @@
 
 <code>docker restart zabbix-agent</code> - restart zabbix-agent container.
 
+Grafana will be available by http://YourIP:3000/, default login:admin, password:admin.
+
 Enjoy! :)
