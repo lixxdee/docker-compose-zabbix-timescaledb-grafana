@@ -66,6 +66,8 @@ services:
       - '3000:3000'
     environment: 
       - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
+    links:
+      - zabbix-web
     depends_on:
       - zabbix-web
   zabbix-agent:
