@@ -2,12 +2,12 @@
 
 <code>cd docker-compose-zabbix-timescaledb-grafana</code>
 
-<code>docker-compose up -d</code>
+<code>docker-compose up -d</code> - build containers.
 
 <code>docker ps -a</code> - make sure all containers are is running
 
 <code>docker inspect zabbix-agent | grep "IPAddress\\": "</code> - result ip address you need change in web interface zabbix server.
 
-<code>docker restart zabbix-agent</code> - restart zabbix-agent container
+<code>docker restart zabbix-agent</code> - restart zabbix-agent container.
 
 Enjoy! :)
