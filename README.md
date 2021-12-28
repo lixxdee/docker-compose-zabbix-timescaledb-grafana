@@ -36,4 +36,4 @@ Example other option config grafana with SSL and local installed grafana-zabbix-
       - zabbix-web
     depends_on:
       - zabbix-web
-For Zabbix SSL you just need copy DHPARAM.PEM, SSL.CRT and SSL.KEY into to <code>/etc/ssl/nginx</code>and make chmod 644.
+For Zabbix SSL you just need copy DHPARAM.PEM, SSL.CRT and SSL.KEY into to <code> /etc/ssl/nginx</code> and make chmod 644.
